@@ -37,31 +37,26 @@ main{
     justify-content: center;
     align-items: center;
 }
-#plus{
+#plus, #minus, #multiply, #divide, #modulo, #clear, #delete{
     background-color: #ffc2b4;
     color: #183642;
 }
-#minus{
-    background-color: #ffc2b4;
-    color: #183642;
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 900,
+    'GRAD' 0,
+    'opsz' 24
 }
-#multiply{
-    background-color: #ffc2b4;
-    color: #183642;
+button:hover{
+    background-color: #fb8f67;
 }
-#divide{
-    background-color: #ffc2b4;
-    color: #183642;
+#delete:hover, #clear:hover, #plus:hover, #minus:hover, #multiply:hover, #divide:hover, #modulo:hover{
+    background-color: #73628a;
+    color: #eaeaea;
+
 }
-#clear{
-    background-color: #ffc2b4;
-    color: #313d5a;
-}
-#delete{
-    background-color: #ffc2b4;
-    color: #313d5a;
-}
-#modulo{
-    background-color: #ffc2b4;
-    color: #313d5a;
+#equal:hover{
+    background-color: #73628a;
 }
