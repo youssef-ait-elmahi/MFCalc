@@ -1,0 +1,67 @@
+body{
+    background-color: #183642;
+    color: #eaeaea;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+button{
+    width: 90px;
+    height: 90px;
+    background-color: #313d5a;
+    color: #eaeaea;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding: 7px;
+    margin: 3px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#result {
+    background-color: #313d5a;
+    height: 100px;
+    width: 400px;
+    border: 2px solid #eaeaea;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#equal {
+    width: 194px;
+    height: 90px;
+    background-color: #fb8f67;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#plus{
+    background-color: #ffc2b4;
+    color: #183642;
+}
+#minus{
+    background-color: #ffc2b4;
+    color: #183642;
+}
+#multiply{
+    background-color: #ffc2b4;
+    color: #183642;
+}
+#divide{
+    background-color: #ffc2b4;
+    color: #183642;
+}
+#clear{
+    background-color: #ffc2b4;
+    color: #313d5a;
+}
+#delete{
+    background-color: #ffc2b4;
+    color: #313d5a;
+}
+#modulo{
+    background-color: #ffc2b4;
+    color: #313d5a;
+}
