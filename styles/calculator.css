@@ -16,6 +16,7 @@ button{
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+    
 }
 #result {
     background-color: #313d5a;
@@ -25,11 +26,17 @@ button{
     border-radius: 30px;
     text-align: center;
     margin-bottom: 30px;
+    font-size: 28px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    font-weight: bold;
+    overflow-y: scroll;
 }
 #equal {
     width: 194px;
     height: 90px;
-    background-color: #fb8f67;
+    background-color: #ffc2b4;
+    color: #183642;
 }
 main{
     display: flex;
@@ -59,4 +66,7 @@ button:hover{
 }
 #equal:hover{
     background-color: #73628a;
+}
+#result::-webkit-scrollbar {
+    display: none;
 }

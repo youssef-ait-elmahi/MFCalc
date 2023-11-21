@@ -8,6 +8,7 @@ ul{
     margin: 2px;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 li{
     list-style: none;
