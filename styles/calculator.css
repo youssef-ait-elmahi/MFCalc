@@ -10,12 +10,14 @@ button{
     background-color: #313d5a;
     color: #eaeaea;
     border: 1px solid #eaeaea;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 7px;
     margin: 3px;
     font-size: 30px;
     font-weight: bold;
     cursor: pointer;
+    box-shadow: 5px 5px 3px #2c2929;
+    transition: background-color 0.01s;
     
 }
 #result {
@@ -23,7 +25,7 @@ button{
     height: 100px;
     width: 400px;
     border: 2px solid #eaeaea;
-    border-radius: 30px;
+    border-radius: 20px;
     text-align: center;
     margin-bottom: 30px;
     font-size: 28px;
@@ -59,14 +61,19 @@ main{
 button:hover{
     background-color: #fb8f67;
 }
-#delete:hover, #clear:hover, #plus:hover, #minus:hover, #multiply:hover, #divide:hover, #modulo:hover{
+#equal:hover, #delete:hover, #clear:hover, #plus:hover, #minus:hover, #multiply:hover, #divide:hover, #modulo:hover{
     background-color: #73628a;
     color: #eaeaea;
 
 }
-#equal:hover{
-    background-color: #73628a;
-}
 #result::-webkit-scrollbar {
     display: none;
+}
+button:active{
+    background-color: #313d5a;
+    box-shadow: 2px 2px 2px #2c2929;
+}
+#equal:active, #delete:active, #clear:active, #plus:active, #minus:active, #multiply:active, #divide:active, #modulo:active{
+    background-color: #313d5a;
+    color: #eaeaea;
 }
