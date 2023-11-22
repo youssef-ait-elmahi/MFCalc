@@ -106,3 +106,25 @@ button:active{
     box-shadow: inset 10px 10px 20px #bebebe,
                 inset -10px -10px 20px #ffffff;
 }
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  #result {
+    width: 300px;
+    font-size: 24px;
+  }
+
+  #equal {
+    width: 150px;
+  }
+}
