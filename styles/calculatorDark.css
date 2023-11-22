@@ -1,0 +1,108 @@
+body{
+    background-color: #eaeaea;
+    color: #eaeaea;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #183642;
+    text-shadow:  10px 10px 20px #bebebe,
+                -10px -10px 20px #ffffff;
+}
+button{
+    width: 90px;
+    height: 90px;
+    background-color: #eaeaea;
+    border: 1px solid #eaeaea;
+    border-radius: 100px;
+    padding: 7px;
+    margin: 3px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow:  10px 10px 20px #bebebe,
+                -10px -10px 20px #ffffff;
+
+}
+
+#result {
+    background-color: #eaeaea;
+    height: 95px;
+    width: 405px;
+    padding: 5px;
+
+    color: #183642;
+    /* border: 3px solid #cbc5ea; */
+    border-radius: 50%;
+    background: #eaeaea;
+    box-shadow:  10px 10px 20px #bebebe,
+             -10px -10px 20px #ffffff;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    font-weight: bold;
+    overflow-y: scroll;
+}
+
+#equal {
+    width: 194px;
+    height: 90px;
+    background-color: #ffc2b4;
+    color: #183642;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#plus, #minus, #multiply, #divide, #modulo, #clear, #delete{
+    /* background-color: #ffc2b4; */
+    background-color: #eaeaea;
+    color: #183642;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 900,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+button:hover{
+    /* background-color: #fb8f67; */
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  10px 10px 20px #bebebe,
+                -10px -10px 20px #ffffff;
+}
+
+#delete:hover, #equal:hover, #clear:hover, #plus:hover, #minus:hover, #multiply:hover, #divide:hover, #modulo:hover{
+    /* background-color: #73628a;
+    color: #eaeaea; */
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow:  10px 10px 20px #bebebe,
+                -10px -10px 20px #ffffff;
+
+}
+
+#result::-webkit-scrollbar {
+    display: none;
+}
+#delete:active, #equal:active, #clear:active, #plus:active, #minus:active, #multiply:active, #divide:active, #modulo:active{
+    background: #e0e0e0;
+    box-shadow: inset 10px 10px 20px #bebebe,
+                inset -10px -10px 20px #ffffff;
+}
+button:active{
+    background: #e0e0e0;
+    box-shadow: inset 10px 10px 20px #bebebe,
+                inset -10px -10px 20px #ffffff;
+}
