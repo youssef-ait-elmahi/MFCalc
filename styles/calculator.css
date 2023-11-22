@@ -4,6 +4,13 @@ body{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
+h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #183642;
+    text-shadow:  10px 10px 20px #bebebe,
+                -10px -10px 20px #ffffff;
+}
 button{
     width: 90px;
     height: 90px;
@@ -17,12 +24,15 @@ button{
     cursor: pointer;
     box-shadow:  10px 10px 20px #bebebe,
                 -10px -10px 20px #ffffff;
+
 }
 
 #result {
     background-color: #eaeaea;
-    height: 100px;
-    width: 400px;
+    height: 95px;
+    width: 405px;
+    padding: 5px;
+
     color: #183642;
     /* border: 3px solid #cbc5ea; */
     border-radius: 50%;
