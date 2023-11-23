@@ -2,6 +2,12 @@
 const buttons = document.querySelectorAll('.button');
 const display = document.getElementById('result');
 
+// Get the link element by its id
+let link = document.getElementById("theme");
+
+// Track the current theme state
+let isDarkTheme = false;
+
 // Adding event listener to the buttons
 buttons.forEach(function(button) {
     button.addEventListener('click', function(e) {
@@ -27,22 +33,3 @@ buttons.forEach(function(button) {
         }
     });
 });
-function switchTheme() {
-    // Get the link element by its id
-    let link = document.getElementById("theme");
-  
-    // Check the current href of the link element
-    if (link.href != "styles/calculator.css") {
-      // Change the href to the other CSS file
-      link.href = "styles/calculatorDark.css";
-    } else {
-      // Change the href to the original CSS file
-      link.href = "styles/calculator.css";
-    }
-  }
-  // Get the button element by its id
-let button = document.getElementById("toggle");
-
-// Add a click event listener to the button
-button.addEventListener("click", switchTheme);
-  
