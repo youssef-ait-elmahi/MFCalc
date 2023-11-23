@@ -161,3 +161,13 @@ button:active {
 #toggle.active {
   background-color: #000; /* Change the background color to black */
 }
+
+a{
+  position: absolute; /* Positioning relative to the nearest positioned ancestor */
+  top: 10px; /* Position from the top */
+  left: 10px; /* Position from the right */
+  font-size: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
