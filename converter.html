@@ -12,21 +12,66 @@
         <h2>Converter</h2>
     </header>
     <main>
-        <section class="p-parent">
-            <div>
-                <input id="dec" type="number">
-            </div>
-            <div>
-                <input id="hex" type="number">
-            </div>
-            <div>
-                <input id="bin" type="number">
-            </div>
-            <div>
-                <input id="oct" type="number">
-            </div>
+        <section>
+            <article class="p-parent">
+                <div>
+                    <h3><b>decimal :</b></h3>
+                    <input id="dec" type="number" placeholder="dec">
+                </div>
+                <div>
+                    <h3><b>hexadecimal :</b></h3>
+                    <input id="hex" type="text" placeholder="hex">
+                </div>
+                <div>
+                    <h3><b>binary :</b></h3>
+                    <input id="bin" type="number" placeholder="bin">
+                </div>
+                <div>
+                    <h3><b>octal :</b></h3>
+                    <input id="oct" type="number" placeholder="oct">
+                </div>
+            </article>
+            <article>
+                <div>
+                  <h2><b>Storage</b></h2>
+                  <div>
+                    <label for="input">Enter the value to convert:</label>
+                    <input id="input" type="number">
+                  </div>
+                  <div>
+                    <label for="source">Select the source unit:</label>
+                    <select id="source">
+                      <option value="bytes">Bytes</option>
+                      <option value="kB">Kilobytes</option>
+                      <option value="MB">Megabytes</option>
+                      <option value="GB">Gigabytes</option>
+                      <option value="TB">Terabytes</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label for="target">Select the target unit:</label>
+                    <select id="target">
+                      <option value="bytes">Bytes</option>
+                      <option value="kB">Kilobytes</option>
+                      <option value="MB">Megabytes</option>
+                      <option value="GB">Gigabytes</option>
+                      <option value="TB">Terabytes</option>
+                    </select>
+                  </div>
+                  <div>
+                    <button id="convert">Convert</button>
+                  </div>
+                  <div>
+                    <p>The converted value is:</p>
+                    <input id="output" type="number">
+                  </div>
+                  
+                </div>
+              </article>
+              
         </section>
 
     </main>
+    <script src="scripts/converter.js"></script>
 </body>
 </html>

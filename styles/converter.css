@@ -35,3 +35,42 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: center;
 
 }
+h3{
+    margin: 0 0 10px 20px;
+    padding: 0;
+}
+select, button{
+    width: 100px;
+    height: 30px;
+    background-color: #313d5a;
+    color: #eaeaea;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    padding: 7px;
+    margin: 3px;
+    cursor: pointer;
+    text-align: center;
+}
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 36px;
+    }
+  
+    button {
+      width: 60px;
+      height: 60px;
+      font-size: 24px;
+    }
+  
+    #result {
+      width: 300px;
+      font-size: 24px;
+    }
+  
+    #equal {
+      width: 150px;
+    }
+  }
+  
