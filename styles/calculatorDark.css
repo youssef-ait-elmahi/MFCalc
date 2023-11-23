@@ -126,3 +126,38 @@ button:active {
     width: 150px;
   }
 }
+/* Define a class for the button */
+#toggle {
+  position: absolute; /* Positioning relative to the nearest positioned ancestor */
+  top: 10px; /* Position from the top */
+  right: 10px; /* Position from the right */
+  width: 60px; /* Width of the button */
+  height: 32px; /* Height of the button */
+  background-color: #ccc; /* Background color */
+  border-radius: 30px; /* Rounded corners */
+  cursor: pointer; /* Change mouse cursor to pointer when over the button */
+  transition: 0.4s; /* Transition effect */
+}
+
+/* Define a class for the switch inside the button */
+#toggle::before {
+  content: ""; /* Add content before the button */
+  position: absolute; /* Positioning relative to the nearest positioned ancestor */
+  top: 2px; /* Position from the top */
+  left: 2px; /* Position from the left */
+  width: 26px; /* Width of the switch */
+  height: 26px; /* Height of the switch */
+  background-color: #fff; /* Background color */
+  border-radius: 50%; /* Rounded corners */
+  transition: 0.4s; /* Transition effect */
+}
+
+/* Move the switch to the right when the button is clicked */
+#toggle.active::before {
+  transform: translateX(30px); /* Move the switch 30px to the right */
+}
+
+/* Change the background color of the button when it's clicked */
+#toggle.active {
+  background-color: #000; /* Change the background color to black */
+}

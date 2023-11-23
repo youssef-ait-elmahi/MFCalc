@@ -33,3 +33,20 @@ buttons.forEach(function(button) {
         }
     });
 });
+
+function switchTheme() {
+    // Toggle the theme state
+    isDarkTheme = !isDarkTheme;
+
+    // Update the href based on the theme state
+    link.href = isDarkTheme ? "styles/calculatorDark.css" : "styles/calculator.css";
+    button.classList.toggle('active');
+}
+
+// Get the button element by its id
+let button = document.getElementById("toggle");
+
+// Add a click event listener to the button
+button.addEventListener("click", switchTheme);
+  
+
