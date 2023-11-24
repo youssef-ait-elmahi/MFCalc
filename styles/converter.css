@@ -1,76 +1,72 @@
-body{
-    background-color: #183642;
-    color: #eaeaea;
-    font-family: 'Courier New', Courier, monospace;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f8fa;
+  transition: all 0.3s ease;
 }
-header{
-    text-align: center;
+
+header {
+  background-color: #24292e;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  transition: all 0.3s ease;
 }
-input {
-    width: 250px;
-    height: 30px;
-    background-color: #313d5a;
-    color: #eaeaea;
-    border: 1px solid #eaeaea;
-    border-radius: 20px;
-    padding: 7px;
-    margin: 3px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 5px 5px 3px #2c2929;
-    transition: background-color 0.01s;
-    text-align: center;
-    
+
+main {
+  margin: 20px;
+  transition: all 0.3s ease;
 }
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="number"], input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #d1d5da;
+  transition: all 0.3s ease;
+}
+
+input[type="number"]:hover, input[type="text"]:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+button {
+  background-color: #2ea44f;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #22863a;
+  transform: scale(1.1);
+}
+
+article {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #d1d5da;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-.p-parent{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-}
-h3{
-    margin: 0 0 10px 20px;
-    padding: 0;
-}
-select, button{
-    width: 100px;
-    height: 30px;
-    background-color: #313d5a;
-    color: #eaeaea;
-    border: 1px solid #eaeaea;
-    border-radius: 20px;
-    padding: 7px;
-    margin: 3px;
-    cursor: pointer;
-    text-align: center;
-}
-/* Media queries for responsiveness */
-
-@media (max-width: 768px) {
-    h1 {
-      font-size: 36px;
-    }
-  
-    button {
-      width: 60px;
-      height: 60px;
-      font-size: 24px;
-    }
-  
-    #result {
-      width: 300px;
-      font-size: 24px;
-    }
-  
-    #equal {
-      width: 150px;
-    }
-  }
-  

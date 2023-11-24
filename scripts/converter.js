@@ -14,14 +14,18 @@ dec.addEventListener("input", function () {
 });
 
 hex.addEventListener("input", function () {
+  // Remove non-hexadecimal characters
+  hex.value = hex.value.replace(/[^a-fA-F0-9]/g, '');
+
   // Convert the hexadecimal value to other bases
   let value = parseInt(hex.value, 16);
   dec.value = value.toString(10);
   bin.value = value.toString(2);
   oct.value = value.toString(8);
 });
-
 bin.addEventListener("input", function () {
+    // Remove non-binary characters (only allow 0 and 1)
+    bin.value = bin.value.replace(/[^0-1]/g, '');
   // Convert the binary value to other bases
   let value = parseInt(bin.value, 2);
   dec.value = value.toString(10);
@@ -30,6 +34,8 @@ bin.addEventListener("input", function () {
 });
 
 oct.addEventListener("input", function () {
+    // Remove non-octal characters (only allow 0 to 7)
+    oct.value = oct.value.replace(/[^0-7]/g, '');
   // Convert the octal value to other bases
   let value = parseInt(oct.value, 8);
   dec.value = value.toString(10);

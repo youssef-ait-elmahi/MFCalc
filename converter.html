@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MFCalculater</title>
+    <title>MFCalculator</title>
     <link rel="icon" href="icons/mfcicon.png">
     <link id="theme" rel="stylesheet" href="styles/converter.css">
 </head>
@@ -20,15 +20,15 @@
                 </div>
                 <div>
                     <h3><b>hexadecimal :</b></h3>
-                    <input id="hex" type="text" placeholder="hex">
-                </div>
+                    <input id="hex" type="text" placeholder="hex" pattern="[A-Fa-f0-9]+">
+                  </div>
                 <div>
                     <h3><b>binary :</b></h3>
-                    <input id="bin" type="number" placeholder="bin">
+                    <input id="bin" type="text" placeholder="bin" pattern="[0-1]+">
                 </div>
                 <div>
                     <h3><b>octal :</b></h3>
-                    <input id="oct" type="number" placeholder="oct">
+                    <input id="oct" type="text" placeholder="oct" pattern="[0-7]+">
                 </div>
             </article>
             <article>
@@ -62,9 +62,8 @@
                     <button id="convert">Convert</button>
                   </div>
                   <div>
-                    <p>The converted value is:</p>
-                    <input id="output" type="number">
-                  </div>
+                    <label for="output">The converted value is:</label>
+                    <input id="output" type="number" readonly>
                   
                 </div>
               </article>

@@ -1,6 +1,28 @@
+:root {
+  --background-color: #353535;
+  --text-color: #eaeaea;
+  --primary-color: #eaeaea;
+  --button-bg-color: #353535;
+  --button-border-color: #353535;
+  --button-text-color: #eaeaea;
+  --button-shadow-color: #2d2d2d;
+  --result-bg-color: #353535;
+  --result-text-color: #eaeaea;
+  --result-shadow-color: #2d2d2d;
+  --equal-bg-color: #353535;
+  --main-bg-color: #eaeaea;
+  --symbol-bg-color: #353535;
+  --symbol-text-color: #eaeaea;
+  --hover-bg-gradient-start: #303030;
+  --hover-bg-gradient-end: #393939;
+  --active-bg-color: #353535;
+  --active-shadow-color: #2d2d2d;
+}
+
+/* Use variables in your styles */
 body {
-  background-color: #353535;
-  color: #eaeaea;
+  background-color: var(--background-color);
+  color: var(--text-color);
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -8,34 +30,34 @@ body {
 h1 {
   font-size: 50px;
   margin-bottom: 30px;
-  color: #eaeaea;
-  text-shadow: 10px 10px 20px #2d2d2d, -10px -10px 20px #3d3d3d;
+  color: var(--primary-color);
+  text-shadow: 10px 10px 20px var(--button-shadow-color), -10px -10px 20px #3d3d3d;
 }
 
 button {
   width: 90px;
   height: 90px;
-  background-color: #353535;
-  border: 1px solid #353535;
+  background-color: var(--button-bg-color);
+  border: 1px solid var(--button-border-color);
   border-radius: 100px;
   padding: 7px;
   margin: 3px;
   font-size: 30px;
   font-weight: bold;
-  color: #eaeaea;
+  color: var(--button-text-color);
   cursor: pointer;
-  box-shadow: 10px 10px 20px #2d2d2d, -10px -10px 20px #3d3d3d;
+  box-shadow: 10px 10px 20px var(--button-shadow-color), -10px -10px 20px #3d3d3d;
 }
 
 #result {
-  background-color: #eaeaea;
+  background-color: var(--result-bg-color);
   height: 95px;
   width: 405px;
   padding: 5px;
-  color: #eaeaea;
+  color: var(--result-text-color);
   border-radius: 50%;
-  background: #353535;
-  box-shadow: 10px 10px 20px #2d2d2d, -10px -10px 20px #3d3d3d;
+  background: var(--result-bg-color);
+  box-shadow: 10px 10px 20px var(--result-shadow-color), -10px -10px 20px #3d3d3d;
   border-radius: 30px;
   text-align: center;
   margin-bottom: 30px;
@@ -49,7 +71,7 @@ button {
 #equal {
   width: 194px;
   height: 90px;
-  color: #eaeaea;
+  color: var(--button-text-color);
 }
 
 main {
@@ -66,8 +88,8 @@ main {
 #modulo,
 #clear,
 #delete {
-  background-color: #353535;
-  color: #eaeaea;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
 }
 
 .material-symbols-outlined {
@@ -83,8 +105,8 @@ button:hover,
 #multiply:hover,
 #divide:hover,
 #modulo:hover {
-  background: linear-gradient(145deg, #303030, #393939);
-  box-shadow: 10px 10px 20px #2d2d2d, -10px -10px 20px #3d3d3d;
+  background: linear-gradient(145deg, var(--hover-bg-gradient-start), var(--hover-bg-gradient-end));
+  box-shadow: 10px 10px 20px var(--button-shadow-color), -10px -10px 20px #3d3d3d;
 }
 
 #result::-webkit-scrollbar {
@@ -100,12 +122,11 @@ button:hover,
 #divide:active,
 #modulo:active,
 button:active {
-  background: #353535;
-  box-shadow: inset 10px 10px 20px #2d2d2d, inset -10px -10px 20px #3d3d3d;
+  background: var(--active-bg-color);
+  box-shadow: inset 10px 10px 20px var(--active-shadow-color), inset -10px -10px 20px #3d3d3d;
 }
 
 /* Media queries for responsiveness */
-
 @media (max-width: 768px) {
   h1 {
     font-size: 36px;
@@ -126,46 +147,48 @@ button:active {
     width: 150px;
   }
 }
+
 /* Define a class for the button */
 #toggle {
-  position: absolute; /* Positioning relative to the nearest positioned ancestor */
-  top: 10px; /* Position from the top */
-  right: 10px; /* Position from the right */
-  width: 60px; /* Width of the button */
-  height: 32px; /* Height of the button */
-  background-color: #ccc; /* Background color */
-  border-radius: 30px; /* Rounded corners */
-  cursor: pointer; /* Change mouse cursor to pointer when over the button */
-  transition: 0.4s; /* Transition effect */
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 60px;
+  height: 32px;
+  background-color: #ccc;
+  border-radius: 30px;
+  border: 1px solid var(--primary-color);
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 /* Define a class for the switch inside the button */
 #toggle::before {
-  content: ""; /* Add content before the button */
-  position: absolute; /* Positioning relative to the nearest positioned ancestor */
-  top: 2px; /* Position from the top */
-  left: 2px; /* Position from the left */
-  width: 26px; /* Width of the switch */
-  height: 26px; /* Height of the switch */
-  background-color: #fff; /* Background color */
-  border-radius: 50%; /* Rounded corners */
-  transition: 0.4s; /* Transition effect */
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  width: 26px;
+  height: 26px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: 0.4s;
 }
 
 /* Move the switch to the right when the button is clicked */
 #toggle.active::before {
-  transform: translateX(30px); /* Move the switch 30px to the right */
+  transform: translateX(30px);
 }
 
 /* Change the background color of the button when it's clicked */
 #toggle.active {
-  background-color: #000; /* Change the background color to black */
+  background-color: var(--hover-bg-gradient-end);
 }
 
-a{
-  position: absolute; /* Positioning relative to the nearest positioned ancestor */
-  top: 10px; /* Position from the top */
-  left: 10px; /* Position from the right */
+a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   font-size: 50px;
   cursor: pointer;
   text-decoration: none;
