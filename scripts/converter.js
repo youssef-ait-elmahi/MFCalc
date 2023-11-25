@@ -132,7 +132,7 @@ document.getElementById('convertWeight').addEventListener('click', function() {
       stones: 0.000157473
   };
 
-  var convertedWeight = weight * conversionRates[weightSource] / conversionRates[weightTarget];
+  var convertedWeight = weight / conversionRates[weightSource] * conversionRates[weightTarget];
 
   document.getElementById('weightOutput').value = convertedWeight;
 });
@@ -191,7 +191,7 @@ document.getElementById('convertArea').addEventListener('click', function() {
       hectares: 0.0001
   };
 
-  var convertedArea = area * conversionRates[areaSource] / conversionRates[areaTarget];
+  var convertedArea = area / conversionRates[areaSource] * conversionRates[areaTarget];
 
   document.getElementById('areaOutput').value = convertedArea;
 });
@@ -211,7 +211,7 @@ document.getElementById('convertVolume').addEventListener('click', function() {
       pints: 2.11338
   };
 
-  var convertedVolume = volume * conversionRates[volumeSource] / conversionRates[volumeTarget];
+  var convertedVolume = volume / conversionRates[volumeSource] * conversionRates[volumeTarget];
 
   document.getElementById('volumeOutput').value = convertedVolume;
 });
