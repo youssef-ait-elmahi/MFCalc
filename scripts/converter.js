@@ -97,6 +97,7 @@ convert.addEventListener("click", function () {
   }
 });
 
+// Length Converter
 document.getElementById('convertLength').addEventListener('click', function() {
   var length = document.getElementById('length').value;
   var lengthSource = document.getElementById('lengthSource').value;
@@ -111,10 +112,11 @@ document.getElementById('convertLength').addEventListener('click', function() {
       inches: 39.3701
   };
 
-  var convertedLength = length * conversionRates[lengthSource] / conversionRates[lengthTarget];
+  var convertedLength = length / conversionRates[lengthSource] * conversionRates[lengthTarget];
 
   document.getElementById('lengthOutput').value = convertedLength;
 });
+
 
 // Weight Converter
 document.getElementById('convertWeight').addEventListener('click', function() {
@@ -143,7 +145,7 @@ document.getElementById('convertSpeed').addEventListener('click', function() {
 
   var conversionRates = {
       kph: 1,
-      mph: 0.621371,
+      mph: 1.60934,
       mps: 0.277778,
       fps: 0.911344
   };
@@ -152,6 +154,7 @@ document.getElementById('convertSpeed').addEventListener('click', function() {
 
   document.getElementById('speedOutput').value = convertedSpeed;
 });
+
 
 // Time Converter
 document.getElementById('convertTime').addEventListener('click', function() {
