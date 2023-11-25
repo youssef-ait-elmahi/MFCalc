@@ -13,26 +13,26 @@
     </header>
     <main>
         <section>
-            <article class="p-parent">
-                <div>
-                    <h3><b>decimal :</b></h3>
-                    <input id="dec" type="number" placeholder="dec">
-                </div>
-                <div>
-                    <h3><b>hexadecimal :</b></h3>
-                    <input id="hex" type="text" placeholder="hex" pattern="[A-Fa-f0-9]+">
-                  </div>
-                <div>
-                    <h3><b>binary :</b></h3>
-                    <input id="bin" type="text" placeholder="bin" pattern="[0-1]+">
-                </div>
-                <div>
-                    <h3><b>octal :</b></h3>
-                    <input id="oct" type="text" placeholder="oct" pattern="[0-7]+">
-                </div>
-            </article>
-            <article>
-                <div>
+          <article class="p-parent">
+            <h2>Number System Converter</h2>
+            <div>
+                <h3><b>Decimal :</b></h3>
+                <input id="dec" type="number" placeholder="Enter a decimal number">
+            </div>
+            <div>
+                <h3><b>Hexadecimal :</b></h3>
+                <input id="hex" type="text" placeholder="Enter a hexadecimal number" pattern="[A-Fa-f0-9]+">
+            </div>
+            <div>
+                <h3><b>Binary :</b></h3>
+                <input id="bin" type="text" placeholder="Enter a binary number" pattern="[0-1]+">
+            </div>
+            <div>
+                <h3><b>Octal :</b></h3>
+                <input id="oct" type="text" placeholder="Enter an octal number" pattern="[0-7]+">
+            </div>
+        </article>
+        <article>
                   <h2><b>Storage</b></h2>
                   <div>
                     <label for="input">Enter the value to convert:</label>
@@ -66,11 +66,260 @@
                     <input id="output" type="number" readonly>
                   
                 </div>
-              </article>
-              
-        </section>
+            </article>
 
-    </main>
-    <script src="scripts/converter.js"></script>
-</body>
-</html>
+            <!-- Length Converter -->
+            <article>
+                <h2>Length Converter</h2>
+                <div>
+                    <label for="length">Enter the length to convert:</label>
+                    <input id="length" type="number">
+                </div>
+                <div>
+                    <label for="lengthSource">Select the source unit:</label>
+                    <select id="lengthSource">
+                      <option value="meters">Meters</option>
+                      <option value="kilometers">Kilometers</option>
+                      <option value="miles">Miles</option>
+                      <option value="yards">Yards</option>
+                      <option value="feet">Feet</option>
+                      <option value="inches">Inches</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="lengthTarget">Select the target unit:</label>
+                    <select id="lengthTarget">
+                      <option value="meters">Meters</option>
+                      <option value="kilometers">Kilometers</option>
+                      <option value="miles">Miles</option>
+                      <option value="yards">Yards</option>
+                      <option value="feet">Feet</option>
+                      <option value="inches">Inches</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="convertLength">Convert</button>
+                </div>
+                <div>
+                    <label for="lengthOutput">The converted length is:</label>
+                    <input id="lengthOutput" type="number" readonly>
+                </div>
+            </article>
+
+            <!-- Weight Converter -->
+            <article>
+                <h2>Weight Converter</h2>
+                <div>
+                    <label for="weight">Enter the weight to convert:</label>
+                    <input id="weight" type="number">
+                </div>
+                <div>
+                    <label for="weightSource">Select the source unit:</label>
+                    <select id="weightSource">
+                      <option value="grams">Grams</option>
+                      <option value="kilograms">Kilograms</option>
+                      <option value="ounces">Ounces</option>
+                      <option value="pounds">Pounds</option>
+                      <option value="stones">Stones</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="weightTarget">Select the target unit:</label>
+                    <select id="weightTarget">
+                      <option value="grams">Grams</option>
+                      <option value="kilograms">Kilograms</option>
+                      <option value="ounces">Ounces</option>
+                      <option value="pounds">Pounds</option>
+                      <option value="stones">Stones</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="convertWeight">Convert</button>
+                </div>
+                <div>
+                    <label for="weightOutput">The converted weight is:</label>
+                    <input id="weightOutput" type="number" readonly>
+                </div>
+            </article>
+
+            <!-- Speed Converter -->
+            <article>
+                <h2>Speed Converter</h2>
+                <div>
+                    <label for="speed">Enter the speed to convert:</label>
+                    <input id="speed" type="number">
+                </div>
+                <div>
+                    <label for="speedSource">Select the source unit:</label>
+                    <select id="speedSource">
+                      <option value="kph">Kilometers per hour</option>
+                      <option value="mph">Miles per hour</option>
+                      <option value="mps">Meters per second</option>
+                      <option value="fps">Feet per second</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="speedTarget">Select the target unit:</label>
+                    <select id="speedTarget">
+                      <option value="kph">Kilometers per hour</option>
+                      <option value="mph">Miles per hour</option>
+                      <option value="mps">Meters per second</option>
+                      <option value="fps">Feet per second</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="convertSpeed">Convert</button>
+                </div>
+                <div>
+                    <label for="speedOutput">The converted speed is:</label>
+                    <input id="speedOutput" type="number" readonly>
+                </div>
+            </article>
+
+            <!-- Time Converter -->
+            <article>
+                <h2>Time Converter</h2>
+                <div>
+                    <label for="time">Enter the time to convert:</label>
+                    <input id="time" type="number">
+                </div>
+                <div>
+                    <label for="timeSource">Select the source unit:</label>
+                    <select id="timeSource">
+                      <option value="seconds">Seconds</option>
+                      <option value="minutes">Minutes</option>
+                      <option value="hours">Hours</option>
+                      <option value="days">Days</option>
+                      <option value="weeks">Weeks</option>
+                      <option value="months">Months</option>
+                      <option value="years">Years</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="timeTarget">Select the target unit:</label>
+                    <select id="timeTarget">
+                      <option value="seconds">Seconds</option>
+                      <option value="minutes">Minutes</option>
+                      <option value="hours">Hours</option>
+                      <option value="days">Days</option>
+                      <option value="weeks">Weeks</option>
+                      <option value="months">Months</option>
+                      <option value="years">Years</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="convertTime">Convert</button>
+                </div>
+                <div>
+                    <label for="timeOutput">The converted time is:</label>
+                    <input id="timeOutput" type="number" readonly>
+                </div>
+            </article>
+
+            <!-- Currency Converter -->
+            <!-- <article>
+                <h2>Currency Converter</h2>
+                <div>
+                    <label for="currency">Enter the amount to convert:</label>
+                    <input id="currency" type="number">
+                </div>
+                <div>
+                    <label for="currencySource">Select the source currency:</label>
+                    <select id="currencySource"> -->
+                      <!-- Add your currency options here -->
+                    <!-- </select>
+                </div>
+                <div>
+                    <label for="currencyTarget">Select the target currency:</label>
+                    <select id="currencyTarget"> -->
+                      <!-- Add your currency options here -->
+                    <!-- </select>
+                </div>
+                <div>
+                    <button id="convertCurrency">Convert</button>
+                </div>
+                <div>
+                    <label for="currencyOutput">The converted amount is:</label>
+                    <input id="currencyOutput" type="number" readonly>
+                </div>
+            </article> -->
+
+            <!-- Area Converter -->
+            <article>
+                <h2>Area Converter</h2>
+                <div>
+                    <label for="area">Enter the area to convert:</label>
+                    <input id="area" type="number">
+                </div>
+                <div>
+                    <label for="areaSource">Select the source unit:</label>
+                    <select id="areaSource">
+                      <option value="sqMeters">Square Meters</option>
+                      <option value="sqKilometers">Square Kilometers</option>
+                      <option value="sqMiles">Square Miles</option>
+                      <option value="acres">Acres</option>
+                      <option value="hectares">Hectares</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="areaTarget">Select the target unit:</label>
+                    <select id="areaTarget">
+                      <option value="sqMeters">Square Meters</option>
+                      <option value="sqKilometers">Square Kilometers</option>
+                      <option value="sqMiles">Square Miles</option>
+                      <option value="acres">Acres</option>
+                      <option value="hectares">Hectares</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="convertArea">Convert</button>
+                </div>
+                <div>
+                    <label for="areaOutput">The converted area is:</label>
+                    <input id="areaOutput" type="number" readonly>
+                </div>
+            </article>
+
+            <!-- Volume Converter -->
+            <article>
+                <h2>Volume Converter</h2>
+                <div>
+                    <label for="volume">Enter the volume to convert:</label>
+                    <input id="volume" type="number">
+                </div>
+                <div>
+                  <label for="volumeSource">Select the source unit:</label>
+                  <select id="volumeSource">
+                    <option value="liters">Liters</option>
+                    <option value="milliliters">Milliliters</option>
+                    <option value="cubicMeters">Cubic Meters</option>
+                    <option value="cubicFeet">Cubic Feet</option>
+                    <option value="gallons">Gallons</option>
+                    <option value="pints">Pints</option>
+                  </select>
+                  </div>
+                  <div>
+                      <label for="volumeTarget">Select the target unit:</label>
+                      <select id="volumeTarget">
+                        <option value="liters">Liters</option>
+                        <option value="milliliters">Milliliters</option>
+                        <option value="cubicMeters">Cubic Meters</option>
+                        <option value="cubicFeet">Cubic Feet</option>
+                        <option value="gallons">Gallons</option>
+                        <option value="pints">Pints</option>
+                      </select>
+                  </div>
+                  <div>
+                      <button id="convertVolume">Convert</button>
+                  </div>
+                  <div>
+                      <label for="volumeOutput">The converted volume is:</label>
+                      <input id="volumeOutput" type="number" readonly>
+                  </div>
+              </article>
+          </section>
+      </main>
+      <script src="scripts/converter.js"></script>
+  </body>
+  </html>
+  
