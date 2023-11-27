@@ -69,8 +69,6 @@ button {
 }
 
 #equal {
-  width: 194px;
-  height: 90px;
   color: var(--button-text-color);
 }
 
