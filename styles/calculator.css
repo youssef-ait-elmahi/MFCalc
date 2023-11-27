@@ -68,8 +68,6 @@ button {
 }
 
 #equal {
-  width: 194px;
-  height: 90px;
   background-color: var(--equal-bg-color);
   color: var(--primary-color);
 }
