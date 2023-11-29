@@ -1,24 +1,38 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(85deg , #1f9399,#25558d, #14479e);
+  background: url(../icons/bg.jpg) fixed;
   margin: 0;
-  padding: 0;
-  color: #333;
+  padding-top: 70px;
+  color: #ffffff;
+  font-size: large;
+}
+.cute-brain{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: 1;
 }
 
 header {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #333;
-  padding: 20px;
+  background: rgba(39, 37, 37, 0.7);
+  backdrop-filter: blur(22px);
+  color: #ffffff;
+  padding: 10px;
   text-align: center;
-  border-bottom: 3px solid #202020;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
 }
 
 main {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  backdrop-filter: blur(20px);
   border-radius: 8px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
@@ -32,8 +46,8 @@ article {
 }
 
 h2 {
-  color: #333;
-  border-bottom: 2px solid #333;
+  color: #ffffff;
+  text-decoration: underline 3px;
 }
 
 label {
