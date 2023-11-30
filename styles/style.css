@@ -1,56 +1,73 @@
-/* Reset some default browser styles */
-* {
+body {
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 1px;
-    box-sizing: border-box;
+    padding: 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+.container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 header {
-    background: #333;
+    background-color: #3498db;
     color: #fff;
-    padding: 10px;
     text-align: center;
+    padding: 20px 0;
 }
 
-nav ul {
-    background: #f4f4f4;
-    list-style: none;
-    padding: 10px 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
+header h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
 main {
-    padding: 20px;
-    background: #fff;
-    height: 400px;
+    margin-top: 20px;
 }
 
-aside {
-    width: 30%;
-    float: right;
-    padding: 20px;
-    background: #f4f4f4;
-    height: 400px;
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-footer {
-    background: #333;
+.features article {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.features a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.features a:hover {
+    text-decoration: underline;
+}
+
+.about {
+    display: none;
+}
+
+.news {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+}
+
+.news h2 {
+    text-align: center;
+    color: #333;
+}
+
+.footer {
+    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
-    clear: both;
+    padding: 10px 0;
 }

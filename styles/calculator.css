@@ -35,14 +35,14 @@ h1 {
 }
 
 button {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   background-color: var(--button-bg-color);
   border: 1px solid var(--button-border-color);
   border-radius: 100px;
   padding: 7px;
   margin: 3px;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   cursor: pointer;
   box-shadow: 10px 10px 20px var(--button-shadow-color), -10px -10px 20px #ffffff;
@@ -50,9 +50,9 @@ button {
 
 #result {
   background-color: var(--result-bg-color);
-  height: 95px;
+  height: 90px;
   width: 405px;
-  padding: 5px;
+  padding: 4px;
   color: var(--result-text-color);
   border-radius: 50%;
   background: var(--result-bg-color);
