@@ -1,14 +1,15 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: url(../icons/bg.jpg) fixed;
+  background: url(../icons/3-bg.jpg) no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
   padding-top: 70px;
   color: #ffffff;
   font-size: large;
 }
 .cute-brain{
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   position: absolute;
   top: 0;
   right: 15px;
@@ -16,10 +17,10 @@ body {
 }
 
 header {
-  background: rgba(39, 37, 37, 0.7);
+  background: #0c0c0cb3;
   backdrop-filter: blur(22px);
   color: #ffffff;
-  padding: 10px;
+  padding: 1px;
   text-align: center;
   position: fixed;
   top: 0;
@@ -34,7 +35,7 @@ main {
   background-color: transparent;
   backdrop-filter: blur(20px);
   border-radius: 8px;
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 
 article {
@@ -50,10 +51,7 @@ h2 {
   text-decoration: underline 3px;
 }
 
-label {
-  font-weight: bold;
-  margin-top: 20px;
-}
+
 
 input, select {
   width: 100%;
@@ -83,11 +81,19 @@ button:hover {
 }
 a {
   position: absolute;
-  top: 10px;
+  top: 5px;
   left: 10px;
   font-size: 50px;
   cursor: pointer;
   text-decoration: none;
   color: var(--primary-color);
 }
-
+input{
+  font-size: 16px;
+  font-weight: 700;
+  font-family: monospace;
+}
+select{
+  font-size: 16px;
+  font-weight: 700;
+}
