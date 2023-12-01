@@ -36,19 +36,19 @@ MFCalc is a feature-rich web application that functions as both a calculator and
 
 #### Number System Converter
 
-####>> Storage Converter
+#### Storage Converter
 
-####>> Length Converter
+#### Length Converter
 
-####>> Weight Converter
+#### Weight Converter
 
-####>> Speed Converter
+#### Speed Converter
 
-####>> Time Converter
+#### Time Converter
 
-####>> Area Converter
+#### Area Converter
 
-####>> Volume Converter
+#### Volume Converter
 
 ## Technologies Used
 
