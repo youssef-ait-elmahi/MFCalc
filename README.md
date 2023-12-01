@@ -30,41 +30,25 @@ MFCalc is a feature-rich web application that functions as both a calculator and
 
 ### Calculator
 
-Perform basic arithmetic operations with our user-friendly calculator.
+>>> Perform basic arithmetic operations with our user-friendly calculator.
 
 ### Converter
 
-#### Number System Converter
+####>> Number System Converter
 
-Convert between different number systems, providing flexibility for various numeric representations.
+####>> Storage Converter
 
-#### Storage Converter
+####>> Length Converter
 
-Effortlessly convert storage units, making it easy to switch between different data storage measurements.
+####>> Weight Converter
 
-#### Length Converter
+####>> Speed Converter
 
-Convert between different length units, suitable for various applications requiring length measurements.
+####>> Time Converter
 
-#### Weight Converter
+####>> Area Converter
 
-Quickly convert between different weight units, facilitating easy transformations for weight-related calculations.
-
-#### Speed Converter
-
-Easily switch between different speed units, enabling seamless conversions for speed-related calculations.
-
-#### Time Converter
-
-Efficiently convert time units, providing convenience for time-related calculations.
-
-#### Area Converter
-
-Convert between different area units, making it simple to switch between various area measurements.
-
-#### Volume Converter
-
-Perform conversions between different volume units, allowing for flexibility in volume-related calculations.
+####>> Volume Converter
 
 ## Technologies Used
 
