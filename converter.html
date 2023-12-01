@@ -1,85 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MFCalculator</title>
-    <link rel="icon" href="icons/mfcicon.png">
-    <link id="theme" rel="stylesheet" href="styles/converter.css">
-</head>
-<body>
-    <header>
-        <h2>Converter</h2>
-        <a href="index.html">↩</a>
-        <img class="cute-brain" src="icons/giphy.gif" alt="cute-brain">
-    </header>
-    <main>
-        <section>
-          <article class="p-parent">
-                <h2>Number System Converter</h2>
-                <div>
-                    <h3><b>Decimal :</b></h3>
-                    <input id="dec" type="number" placeholder="Enter a decimal number">
-                </div>
-                <div>
-                    <h3><b>Hexadecimal :</b></h3>
-                    <input id="hex" type="text" placeholder="Enter a hexadecimal number" pattern="[A-Fa-f0-9]+">
-                </div>
-                <div>
-                    <h3><b>Binary :</b></h3>
-                    <input id="bin" type="text" placeholder="Enter a binary number" pattern="[0-1]+">
-                </div>
-                <div>
-                    <h3><b>Octal :</b></h3>
-                    <input id="oct" type="text" placeholder="Enter an octal number" pattern="[0-7]+">
-                </div>
-            </article>
-            <article>
-                  <h2>Storage</h2>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>MFCalculator</title>
+      <link rel="icon" href="icons/mfcicon.png">
+      <link id="theme" rel="stylesheet" href="styles/converter.css">
+  </head>
+  <body>
+      <header class="converter-header">
+          <h2 class="converter-title">Converter</h2>
+          <a href="index.html" class="converter-back">↩</a>
+          <img class="cute-brain" src="icons/giphy.gif" alt="cute-brain">
+      </header>
+      <main class="converter-main">
+          <section class="converter-section">
+            <article class="converter-article p-parent">
+                  <h2 class="converter-subtitle">Number System Converter</h2>
                   <div>
-                    <label for="input">Enter the value to convert:</label>
-                    <input id="input" type="number">
+                      <h3><b>Decimal :</b></h3>
+                      <input class="converter-input" id="dec" type="number" placeholder="Enter a decimal number">
                   </div>
                   <div>
-                    <label for="source">Select the source unit:</label>
-                    <select id="source">
-                      <option value="bytes">Bytes</option>
-                      <option value="kB">Kilobytes</option>
-                      <option value="MB">Megabytes</option>
-                      <option value="GB">Gigabytes</option>
-                      <option value="TB">Terabytes</option>
-                    </select>
+                      <h3><b>Hexadecimal :</b></h3>
+                      <input class="converter-input" id="hex" type="text" placeholder="Enter a hexadecimal number" pattern="[A-Fa-f0-9]+">
                   </div>
                   <div>
-                    <label for="target">Select the target unit:</label>
-                    <select id="target">
-                      <option value="bytes">Bytes</option>
-                      <option value="kB">Kilobytes</option>
-                      <option value="MB">Megabytes</option>
-                      <option value="GB">Gigabytes</option>
-                      <option value="TB">Terabytes</option>
-                    </select>
+                      <h3><b>Binary :</b></h3>
+                      <input class="converter-input" id="bin" type="text" placeholder="Enter a binary number" pattern="[0-1]+">
                   </div>
                   <div>
-                    <button id="convert">Convert</button>
+                      <h3><b>Octal :</b></h3>
+                      <input class="converter-input" id="oct" type="text" placeholder="Enter an octal number" pattern="[0-7]+">
                   </div>
-                  <div>
-                    <label for="output">The converted value is:</label>
-                    <input id="output" type="number" readonly>
-                  
-                </div>
-            </article>
-
-            <!-- Length Converter -->
-            <article>
+              </article>
+              <article class="converter-article">
+                    <h2 class="converter-subtitle">Storage</h2>
+                    <div>
+                      <label for="input">Enter the value to convert:</label>
+                      <input class="converter-input" id="input" type="number">
+                    </div>
+                    <div>
+                      <label for="source">Select the source unit:</label>
+                      <select class="converter-select" id="source">
+                        <option value="bytes">Bytes</option>
+                        <option value="kB">Kilobytes</option>
+                        <option value="MB">Megabytes</option>
+                        <option value="GB">Gigabytes</option>
+                        <option value="TB">Terabytes</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label for="target">Select the target unit:</label>
+                      <select class="converter-select" id="target">
+                        <option value="bytes">Bytes</option>
+                        <option value="kB">Kilobytes</option>
+                        <option value="MB">Megabytes</option>
+                        <option value="GB">Gigabytes</option>
+                        <option value="TB">Terabytes</option>
+                      </select>
+                    </div>
+                    <div>
+                      <button class="converter-button" id="convert">Convert</button>
+                    </div>
+                    <div>
+                      <label for="output">The converted value is:</label>
+                      <input class="converter-input" id="output" type="number" readonly>
+                  </div>
+              </article>
+  
+              <article class="converter-article">
                 <h2>Length Converter</h2>
                 <div>
                     <label for="length">Enter the length to convert:</label>
-                    <input id="length" type="number">
+                    <input class="converter-input" id="length" type="number">
                 </div>
                 <div>
                     <label for="lengthSource">Select the source unit:</label>
-                    <select id="lengthSource">
+                    <select class="converter-select" id="lengthSource">
                       <option value="meters">Meters</option>
                       <option value="kilometers">Kilometers</option>
                       <option value="miles">Miles</option>
@@ -90,7 +88,7 @@
                 </div>
                 <div>
                     <label for="lengthTarget">Select the target unit:</label>
-                    <select id="lengthTarget">
+                    <select class="converter-select" id="lengthTarget">
                       <option value="meters">Meters</option>
                       <option value="kilometers">Kilometers</option>
                       <option value="miles">Miles</option>
@@ -100,24 +98,24 @@
                     </select>
                 </div>
                 <div>
-                    <button id="convertLength">Convert</button>
+                    <button class="converter-button" id="convertLength">Convert</button>
                 </div>
                 <div>
                     <label for="lengthOutput">The converted length is:</label>
-                    <input id="lengthOutput" type="number" readonly>
+                    <input class="converter-input" id="lengthOutput" type="number" readonly>
                 </div>
             </article>
 
             <!-- Weight Converter -->
-            <article>
+            <article class="converter-article">
                 <h2>Weight Converter</h2>
                 <div>
                     <label for="weight">Enter the weight to convert:</label>
-                    <input id="weight" type="number">
+                    <input class="converter-input" id="weight" type="number">
                 </div>
                 <div>
                     <label for="weightSource">Select the source unit:</label>
-                    <select id="weightSource">
+                    <select class="converter-select" id="weightSource">
                       <option value="grams">Grams</option>
                       <option value="kilograms">Kilograms</option>
                       <option value="ounces">Ounces</option>
@@ -127,7 +125,7 @@
                 </div>
                 <div>
                     <label for="weightTarget">Select the target unit:</label>
-                    <select id="weightTarget">
+                    <select class="converter-select" id="weightTarget">
                       <option value="grams">Grams</option>
                       <option value="kilograms">Kilograms</option>
                       <option value="ounces">Ounces</option>
@@ -136,24 +134,24 @@
                     </select>
                 </div>
                 <div>
-                    <button id="convertWeight">Convert</button>
+                    <button class="converter-button" id="convertWeight">Convert</button>
                 </div>
                 <div>
                     <label for="weightOutput">The converted weight is:</label>
-                    <input id="weightOutput" type="number" readonly>
+                    <input class="converter-input" id="weightOutput" type="number" readonly>
                 </div>
             </article>
 
             <!-- Speed Converter -->
-            <article>
+            <article class="converter-article">
                 <h2>Speed Converter</h2>
                 <div>
                     <label for="speed">Enter the speed to convert:</label>
-                    <input id="speed" type="number">
+                    <input class="converter-input" id="speed" type="number">
                 </div>
                 <div>
                     <label for="speedSource">Select the source unit:</label>
-                    <select id="speedSource">
+                    <select class="converter-select" id="speedSource">
                       <option value="kph">Kilometers per hour</option>
                       <option value="mph">Miles per hour</option>
                       <option value="mps">Meters per second</option>
@@ -162,7 +160,7 @@
                 </div>
                 <div>
                     <label for="speedTarget">Select the target unit:</label>
-                    <select id="speedTarget">
+                    <select class="converter-select" id="speedTarget">
                       <option value="kph">Kilometers per hour</option>
                       <option value="mph">Miles per hour</option>
                       <option value="mps">Meters per second</option>
@@ -170,24 +168,24 @@
                     </select>
                 </div>
                 <div>
-                    <button id="convertSpeed">Convert</button>
+                    <button class="converter-button" id="convertSpeed">Convert</button>
                 </div>
                 <div>
                     <label for="speedOutput">The converted speed is:</label>
-                    <input id="speedOutput" type="number" readonly>
+                    <input class="converter-input" id="speedOutput" type="number" readonly>
                 </div>
             </article>
 
             <!-- Time Converter -->
-            <article>
+            <article class="converter-article">
                 <h2>Time Converter</h2>
                 <div>
                     <label for="time">Enter the time to convert:</label>
-                    <input id="time" type="number">
+                    <input class="converter-input" id="time" type="number">
                 </div>
                 <div>
                     <label for="timeSource">Select the source unit:</label>
-                    <select id="timeSource">
+                    <select class="converter-select" id="timeSource">
                       <option value="seconds">Seconds</option>
                       <option value="minutes">Minutes</option>
                       <option value="hours">Hours</option>
@@ -199,7 +197,7 @@
                 </div>
                 <div>
                     <label for="timeTarget">Select the target unit:</label>
-                    <select id="timeTarget">
+                    <select class="converter-select" id="timeTarget">
                       <option value="seconds">Seconds</option>
                       <option value="minutes">Minutes</option>
                       <option value="hours">Hours</option>
@@ -210,52 +208,52 @@
                     </select>
                 </div>
                 <div>
-                    <button id="convertTime">Convert</button>
+                    <button class="converter-button" id="convertTime">Convert</button>
                 </div>
                 <div>
                     <label for="timeOutput">The converted time is:</label>
-                    <input id="timeOutput" type="number" readonly>
+                    <input class="converter-input" id="timeOutput" type="number" readonly>
                 </div>
             </article>
 
             <!-- Currency Converter -->
-            <!-- <article>
+            <!-- <article class="converter-article">
                 <h2>Currency Converter</h2>
                 <div>
                     <label for="currency">Enter the amount to convert:</label>
-                    <input id="currency" type="number">
+                    <input class="converter-input" id="currency" type="number">
                 </div>
                 <div>
                     <label for="currencySource">Select the source currency:</label>
-                    <select id="currencySource"> -->
+                    <select class="converter-select" id="currencySource"> -->
                       <!-- Add your currency options here -->
                     <!-- </select>
                 </div>
                 <div>
                     <label for="currencyTarget">Select the target currency:</label>
-                    <select id="currencyTarget"> -->
+                    <select class="converter-select" id="currencyTarget"> -->
                       <!-- Add your currency options here -->
                     <!-- </select>
                 </div>
                 <div>
-                    <button id="convertCurrency">Convert</button>
+                    <button class="converter-button" id="convertCurrency">Convert</button>
                 </div>
                 <div>
                     <label for="currencyOutput">The converted amount is:</label>
-                    <input id="currencyOutput" type="number" readonly>
+                    <input class="converter-input" id="currencyOutput" type="number" readonly>
                 </div>
             </article> -->
 
             <!-- Area Converter -->
-            <article>
+            <article class="converter-article">
                 <h2>Area Converter</h2>
                 <div>
                     <label for="area">Enter the area to convert:</label>
-                    <input id="area" type="number">
+                    <input class="converter-input" id="area" type="number">
                 </div>
                 <div>
                     <label for="areaSource">Select the source unit:</label>
-                    <select id="areaSource">
+                    <select class="converter-select" id="areaSource">
                       <option value="sqMeters">Square Meters</option>
                       <option value="sqKilometers">Square Kilometers</option>
                       <option value="sqMiles">Square Miles</option>
@@ -265,7 +263,7 @@
                 </div>
                 <div>
                     <label for="areaTarget">Select the target unit:</label>
-                    <select id="areaTarget">
+                    <select class="converter-select" id="areaTarget">
                       <option value="sqMeters">Square Meters</option>
                       <option value="sqKilometers">Square Kilometers</option>
                       <option value="sqMiles">Square Miles</option>
@@ -274,24 +272,24 @@
                     </select>
                 </div>
                 <div>
-                    <button id="convertArea">Convert</button>
+                    <button class="converter-button" id="convertArea">Convert</button>
                 </div>
                 <div>
                     <label for="areaOutput">The converted area is:</label>
-                    <input id="areaOutput" type="number" readonly>
+                    <input class="converter-input" id="areaOutput" type="number" readonly>
                 </div>
             </article>
 
             <!-- Volume Converter -->
-            <article>
+            <article class="converter-article">
                 <h2>Volume Converter</h2>
                 <div>
                     <label for="volume">Enter the volume to convert:</label>
-                    <input id="volume" type="number">
+                    <input class="converter-input" id="volume" type="number">
                 </div>
                 <div>
                   <label for="volumeSource">Select the source unit:</label>
-                  <select id="volumeSource">
+                  <select class="converter-select" id="volumeSource">
                     <option value="liters">Liters</option>
                     <option value="milliliters">Milliliters</option>
                     <option value="cubicMeters">Cubic Meters</option>
@@ -302,7 +300,7 @@
                   </div>
                   <div>
                       <label for="volumeTarget">Select the target unit:</label>
-                      <select id="volumeTarget">
+                      <select class="converter-select" id="volumeTarget">
                         <option value="liters">Liters</option>
                         <option value="milliliters">Milliliters</option>
                         <option value="cubicMeters">Cubic Meters</option>
@@ -312,16 +310,15 @@
                       </select>
                   </div>
                   <div>
-                      <button id="convertVolume">Convert</button>
+                      <button class="converter-button" id="convertVolume">Convert</button>
                   </div>
                   <div>
                       <label for="volumeOutput">The converted volume is:</label>
-                      <input id="volumeOutput" type="number" readonly>
+                      <input class="converter-input" id="volumeOutput" type="number" readonly>
                   </div>
               </article>
-          </section>
-      </main>
-      <script src="scripts/converter.js"></script>
-  </body>
-  </html>
-  
+            </section>
+        </main>
+        <script src="scripts/converter.js"></script>
+    </body>
+    </html>

@@ -7,7 +7,8 @@ body {
   color: #ffffff;
   font-size: large;
 }
-.cute-brain{
+
+.cute-brain {
   width: 80px;
   height: 80px;
   position: absolute;
@@ -16,7 +17,7 @@ body {
   z-index: 1;
 }
 
-header {
+.converter-header {
   background: #0c0c0cb3;
   backdrop-filter: blur(22px);
   color: #ffffff;
@@ -28,17 +29,17 @@ header {
   z-index: 2;
 }
 
-main {
+.converter-main {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
   background-color: transparent;
   backdrop-filter: blur(20px);
   border-radius: 8px;
-  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
-article {
+.converter-article {
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 20px;
@@ -46,22 +47,23 @@ article {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.converter-subtitle {
   color: #ffffff;
   text-decoration: underline 3px;
 }
 
-
-
-input, select {
+.converter-input,
+.converter-select {
   width: 100%;
   padding: 10px;
   border-radius: 4px;
   border: 1px solid #ccc;
   box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 700;
 }
 
-button {
+.converter-button {
   background-color: #5b86e5;
   color: white;
   border: none;
@@ -76,10 +78,11 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+.converter-button:hover {
   background-color: #36d1dc;
 }
-a {
+
+.converter-back {
   position: absolute;
   top: 5px;
   left: 10px;
@@ -88,12 +91,14 @@ a {
   text-decoration: none;
   color: var(--primary-color);
 }
-input{
+
+.converter-input {
   font-size: 16px;
   font-weight: 700;
   font-family: monospace;
 }
-select{
+
+.converter-select {
   font-size: 16px;
   font-weight: 700;
 }

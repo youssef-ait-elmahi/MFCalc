@@ -3,22 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Add a title to your document -->
     <title>MFCalculator</title>
-    <!-- Add a favicon to your document -->
     <link rel="icon" href="icons/mfcicon.png">
     <link id="theme" rel="stylesheet" href="styles/calculator.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
-        <h1>Calculator</h1>
-        <a href="index.html">↩</a>
-        <button id="toggle"></button>
+        <h1 class="calculator-title">Calculator</h1>
+        <a href="index.html" class="back-link">↩</a>
+        <button id="toggle" class="theme-toggle"></button>
     </header>
     <main>
-        
-        <div id="result"></div>
+        <div id="result" class="calculator-result"></div>
         <section class="p-button">
             <div>
                 <button class="button" id="sin">sin</button>
@@ -36,10 +33,10 @@
             </div>
             <div>
                 <button class="button" id="factorial">!</button>
-                <button class="button" id="clear" onclick="clear">AC</button>
+                <button class="button" id="clear" onclick="clearCalculator()">AC</button>
                 <button class="button" id="modulo">%</button>
                 <button class="button" id="delete">⇐</button>
-                <button class="button"id="divide">/</button>
+                <button class="button" id="divide">/</button>
             </div>
             <div>
                 <button class="button" id="pow">^</button>
@@ -68,11 +65,9 @@
                 <button class="button" id="0">0</button>
                 <button class="button" id="dot">.</button>
                 <button class="button" id="equal">=</button>
-                
             </div>
         </section>
     </main>
-    <!-- Add a script tag to add your JavaScript code -->
     <script src="scripts/script.js"></script>
 </body>
 </html>
