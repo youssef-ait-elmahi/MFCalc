@@ -1,7 +1,7 @@
 # MFCalc - Multi-Functional Calculator
 
 ![MFCalc Logo](https://github.com/youssef-ait-elmahi/MFCalc/blob/main/icons/mfcicon.png) <!-- Replace with the link to your project logo or an appropriate image -->
-...
+
 ## Table of Content
 
 - [Introduction](#introduction)
