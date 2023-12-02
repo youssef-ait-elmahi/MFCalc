@@ -41,13 +41,13 @@ body {
 
 .header {
   position: relative;
-  z-index: 4;
-  background-color: transparent;
+  background-color: #80808088;
   backdrop-filter: blur(15px);
   padding: 20px;
   text-align: center;
   border-bottom: #00162b 3px solid;
   box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  z-index: 4;
 }
 
 .header-title {
@@ -69,6 +69,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .features .feature {
@@ -192,11 +193,11 @@ html {
       /* Typing animation */
       @keyframes typing {
           from { width: 0; }
-          to { width: 50%; }
+          to { width: 15%; }
       }
 
       /* Cursor animation */
       @keyframes blink {
           from, to { border-color: rgb(255, 255, 255); }
-          50% { border-color: rgb(255, 255, 255); }
+          50% { border-color: transparent}
       }
