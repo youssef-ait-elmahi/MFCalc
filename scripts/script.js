@@ -15,7 +15,7 @@ let isRadian = true;
 let isInverse = false;
 
 // Function to clear the display
-function clearDisplay() {
+function clearCalculator() {
     display.textContent = '';
 }
 
