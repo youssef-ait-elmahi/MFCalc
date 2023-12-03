@@ -188,3 +188,7 @@ main {
   text-decoration: none;
   color: inherit;
 }
+
+.button.toggled {
+  background-color: #90ff55; /* change this to your preferred color */
+}
