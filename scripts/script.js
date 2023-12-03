@@ -78,7 +78,7 @@ buttons.forEach(function(button) {
 
         // Check the button's ID and call the appropriate function
         if (e.target.id === 'clear') {
-            clearDisplay();
+            clearCalculator();
         } else if (e.target.id === 'equal') {
             evaluateExpression();
         } else if (e.target.id === 'delete') {
