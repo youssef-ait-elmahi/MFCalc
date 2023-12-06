@@ -18,8 +18,8 @@ body {
 }
 
 .converter-header {
-  background: #0c0c0cb3;
-  backdrop-filter: blur(22px);
+  background: rgba(23, 43, 70, 0.5);
+  backdrop-filter: blur(30px);
   color: #ffffff;
   padding: 1px;
   text-align: center;
