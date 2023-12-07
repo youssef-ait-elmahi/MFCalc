@@ -3,7 +3,7 @@
 /* Reset default styles */
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0px;
   padding: 0;
 }
 
@@ -14,6 +14,7 @@ body {
   font-family: Arial, sans-serif;
   color: #1d1b1b;
   /* overflow: hidden; */
+  scroll-behavior: smooth;
 }
 
 /* .char {
@@ -63,7 +64,7 @@ body {
 .main {
   margin: 15px; /* Adjust as needed */
   padding: 15px; /* Adjust as needed */
-  /* height: 200vh; */
+  height: 100%;
 }
 
 
@@ -71,6 +72,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 20px;
+  padding-top: 40px;
+  height: 90vh;
+}
+.feature {
+  display: flex;
+  flex-wrap: wrap;
   margin: 20px;
   padding-top: 20px;
 }
@@ -81,13 +89,12 @@ body {
 }
 
 .footer {
-  position: relative;
+  position: fixed;
   z-index: 4;
   background-color: transparent;
   backdrop-filter: blur(5px);
   padding: 10px;
   text-align: center;
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -211,4 +218,33 @@ text-decoration: none;
  .card:hover .card-button {
   transform: translate(-50%, 50%);
   opacity: 1;
+ }
+ .img{
+  width: 28rem;
+  height: auto;
+  border-radius: 23px;
+  position: relative;
+  padding: 15px;
+  margin: 20px;
+
+ }
+ .about{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 35px 0;
+  padding: 30px;
+  height: 85vh;
+ }
+ .title-fea{
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px;
+ }
+ .about-title{
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px;
  }
