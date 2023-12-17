@@ -251,3 +251,11 @@ text-decoration: none;
       width: 100%; /* Adjust as needed */
   }
 }
+.cr{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+
+}
